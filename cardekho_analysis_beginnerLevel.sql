@@ -1,6 +1,8 @@
 create schema cars;
+
 USE cars;
 /* import tables */
+
 
 /*Import data*/
 select * from cars.cardekho;
@@ -12,7 +14,6 @@ SELECT COUNT(*) AS TOTAL FROM cars.cardekho;
 SELECT COUNT(*) FROM cars.cardekho WHERE year = 2023;
 
 -- the manager asked the employee : How many cars available in 2020, 2021,2022 --
-
 SELECT year,COUNT(*) AS cars_available FROM cars.cardekho WHERE year IN (2020,2021,2022) group by year;
 
 -- client asked me to  print the total of all cars by year. I don't see all the details --
